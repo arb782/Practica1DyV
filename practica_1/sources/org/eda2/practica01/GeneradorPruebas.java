@@ -23,7 +23,7 @@ public class GeneradorPruebas {
 
 
 	private static void jugadoresAcendente(long N) throws FileNotFoundException {
-		PrintWriter pw= new PrintWriter(new File(filePath+"uola.csv"));
+		PrintWriter pw= new PrintWriter(new File(filePath+"Prueba.csv"));
 		pw.println(cabecera);
 		for (int i = 0; i < N; i++) {
 			pw.println(";;Jugador " +i+";;;;;100;"+i);
