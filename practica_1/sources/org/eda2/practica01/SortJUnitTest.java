@@ -18,7 +18,7 @@ class SortJUnitTest {
 		long start = System.currentTimeMillis();
 		ArrayList<Player> jugadores=NbaSort.mejoresJugadores();
 		long end = System.currentTimeMillis();
-		System.out.println("Tiempo: " + (end - start)/1000 + "segundos");
+		System.out.println("Tiempo: " + (end - start) + "ms");
 		assertEquals("[Wilt Chamberlain*= 1153puntos, Kareem Abdul-Jabbar*= 1076puntos, Michael Jordan*= 1075puntos, George Gervin*= 1059puntos, LeBron James= 1034puntos, Karl Malone*= 1005puntos, Karl-Anthony Towns= 965puntos, Kevin Durant= 935puntos, Oscar Robertson*= 925puntos, Jerry West*= 854puntos]", jugadores.toString());
 	}
 	
