@@ -19,7 +19,7 @@ import java.util.Scanner;
 public class NbaSort {
 
 	// Campos de la clase
-	private static String filePath = System.getProperty("user.dir") + File.separator + "src" + File.separator + "org"
+	private static String rutaArchivo = System.getProperty("user.dir") + File.separator + "src" + File.separator + "org"
 			+ File.separator + "eda2" + File.separator + "practica01" + File.separator + "NbaStats.csv";
 	private static ArrayList<Player> nba;
 	public static int numJugadores = 10;
@@ -47,10 +47,10 @@ public class NbaSort {
 	 * Metodo para cargar el archivo
 	 * 
 	 */
-	public static void cargarArchivo() {
+	public static void cargarArchivo(String rutaArchivo) {
 		nba = new ArrayList<Player>();
 		try {
-			Scanner sc = new Scanner(new File(filePath));
+			Scanner sc = new Scanner(new File(rutaArchivo));
 			String linea = "";
 			String[] tokens;
 			Player jugadorActual = null;
