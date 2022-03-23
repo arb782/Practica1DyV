@@ -15,7 +15,7 @@ public class EjecucionOrdenacion {
 		for (Player jugador : NbaSort.mejoresJugadores()) {
 			System.out.println("          " + jugador + "            ");
 		}
-		System.out.println("Tiempo: " + (end - start) + "ms");
+		System.out.println("Tiempo: " + (end - start)/1000 + "segundos");
 		
 	}
 
